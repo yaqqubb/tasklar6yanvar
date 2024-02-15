@@ -1,0 +1,60 @@
+﻿Task1 
+// Funksiya: Ədədin tək və ya cüt olduğunu yoxla
+funksiya TekCütYoxla(ədəd):
+    
+    əgər ədəd % 2 == 0: 
+        // Ədəd cütdür
+        çap et "Cüt"
+    digər tərəfdən:
+        // Ədəd təkdir
+        çap et "Tək"
+      Algoritmanın sonu
+
+// Nümunə istifadə
+DaxilEdilənƏdəd = // İstifadəçidən ədəd daxil et
+Nəticə = TəkCütYoxla(daxilEdilənƏdəd)
+çap et "Ədəd " + Nəticə
+
+Task 2
+Algoritma Bolünürmü(ədəd1, ədəd2)
+    Əgər ədəd1 % ədəd2 = 0
+        Çap "Çapa"
+    Əks halda
+        Çap "Bölünmür"
+    AlgoritmanınSonu
+Task 3
+Algoritma SonRqəmYeddi(ədəd)
+    sonuncuRqəm = ədəd % 10
+    Əgər sonuncuRqəm = 7
+        Çap "Bəli"
+    Əks halda
+        Çap "Xeyr"
+    AlgoritmanınSonu
+Task 4
+Algoritma ReqemlerEyniMi(ədəd)
+    birinciRqəm = ədəd / 10
+    ikinciRqəm = ədəd % 10
+    Əgər birinciRqəm = ikinciRqəm
+        Çap "Bəli"
+    Əks halda
+        Çap "Xeyr"
+    AlgoritmanınSonu
+Task5
+Algoritma CütEdedHasiliTap(ədəd)
+    birinciRqəm = ədəd / 10
+    ikinciRqəm = ədəd % 10
+    cütEdedHasili = 1
+    cəm = birinciRqəm + ikinciRqəm
+    
+    Əgər cəm % 2 = 0
+        while birinciRqəm > 0 və ikinciRqəm > 0
+            birinciRqəmSonRqəm = birinciRqəm % 10
+            ikinciRqəmSonRqəm = ikinciRqəm % 10
+            cütEdedHasili = cütEdedHasili * (birinciRqəmSonRqəm * ikinciRqəmSonRqəm)
+            birinciRqəm = birinciRqəm / 10
+            ikinciRqəm = ikinciRqəm / 10
+        Çap "Ədədin rəqəmlərinin hasiləsi: " + cütEdedHasili
+    Əks halda
+        Çap "Ədəddə tək rəqəm mövcuddur"
+    AlgoritmanınSonu
+
