@@ -19,7 +19,7 @@ namespace ConsoleTask8
 
             static void Task1()
             {
-                // Verilmiş ədədin tək və ya cüt ədəd olduğunu yoxla
+                
 
 
 
@@ -39,7 +39,7 @@ namespace ConsoleTask8
             }
             static void Task2()
             {
-            // 2 ədəd verilib. Əgər birinci ədəd ikinci ədədə tam bölünürsə o zaman cavabı çapa vermək. Əks halda "Bölünmür" sözünü çap etmək
+            
             l1:
                 Console.WriteLine("Enter first number");
                 int a = int.Parse(Console.ReadLine());
@@ -55,7 +55,7 @@ namespace ConsoleTask8
 
                 else
                 {
-                    Console.WriteLine("Again enter number");
+                    Console.WriteLine("Enter the number again.");
                     goto l1;
                 }
 
@@ -64,7 +64,7 @@ namespace ConsoleTask8
             }
             static void Task3()
             {
-                //Verilmiş ədədin sonuncu rəqəmi 7 ilə qurtarırmı? Bəli və Xeyr cavabını ekrana çap etmək
+               
                 Console.WriteLine("Enter a number");
             l2:
                 int number = int.Parse(Console.ReadLine());
@@ -81,7 +81,7 @@ namespace ConsoleTask8
             }
             static void Task4()
             {
-            //Verilmiş  2 rəqəmli ədədin rəqəmləri eynidirmi?
+           
             l3:
                 Console.WriteLine("Enter to digit number");
                 int number = int.Parse(Console.ReadLine());
@@ -133,11 +133,11 @@ namespace ConsoleTask8
 
                     if (sumOfDigits % 2 == 0)
                     {
-                        Console.WriteLine($"Reqemlerin hasili : {productOfDigits}");
+                        Console.WriteLine($"Product : {productOfDigits}");
                     }
                     else
                     {
-                        Console.WriteLine("ededde tek reqem mövcuddur");
+                        Console.WriteLine("There is only one digit in the number.");
                     }
                 }
                 else
@@ -149,8 +149,8 @@ namespace ConsoleTask8
             static void Task6()
             {
                 Student s1 = new Student();
-                s1.name = "Aqsin";
-                s1.surname = "Abbaszade";
+                s1.name = "Yaqub";
+                s1.surname = "Ehmedov";
                 s1.id = 1;
                 s1.birthDate = new DateTime(2004, 07, 22);
 
